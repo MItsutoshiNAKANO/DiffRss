@@ -1,11 +1,12 @@
 {
-  "name": "",
+  "name": "diff-jvn-rss",
   "version": "1.0.0",
-  "description": "",
+  "description": "diff JVN RSS",
   "scripts": {
     "start": "func start",
     "test": "echo \"No tests yet...\""
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "rss-parser": "^3.12.0"
+  }
 }

@@ -1,9 +1,11 @@
+'use strict';
+
 module.exports = async function (context, myTimer) {
-    var timeStamp = new Date().toISOString();
-    
     if (myTimer.isPastDue)
     {
         context.log('JavaScript is running late!');
     }
-    context.log('JavaScript timer trigger function ran!', timeStamp);   
+    let diffJvnRss = require('./diff-jvn-rss');
+    const current = diffJvnRss.pickupJvnRss(await diffJvnRss.parser.parseURL(diffJvnRss.URL));
+    console.log(current);
 };
