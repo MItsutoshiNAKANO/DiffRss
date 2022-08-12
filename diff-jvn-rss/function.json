@@ -1,10 +1,15 @@
 {
   "bindings": [
     {
-      "name": "myTimer",
+      "name": "timer",
       "type": "timerTrigger",
       "direction": "in",
-      "schedule": "1 1 8,18 * * *"
+      "schedule": "1 1 9,23 * * *"
+    },
+    {
+      "name": "saver",
+      "type": "durableClient",
+      "direction": "in"
     }
   ]
 }
