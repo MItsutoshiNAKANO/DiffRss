@@ -12,7 +12,7 @@ const df = require('durable-functions')
 // https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-reference-node?tabs=v2-v3-v4-export%2Cv2-v3-v4-done%2Cv2%2Cv2-log-custom-telemetry%2Cv2-accessing-request-and-response%2Cwindows-setting-the-node-version#use-async-and-await
 const util = require('util')
 const entityFunction = util.promisify(function (context) {
-  let value;
+  let value
   switch (context.df.operationName) {
     case 'set':
       context.log('set')
