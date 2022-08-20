@@ -11,5 +11,3 @@ For a `TimerTrigger` to work, you provide a schedule in the form of a [cron expr
 See:
 
 * <https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-core-tools-reference?tabs=v2>
-
-<TODO> Documentation
