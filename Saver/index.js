@@ -27,7 +27,7 @@ const entityFunction = util.promisify(function (context) {
       context.df.return(value)
       break
     default:
-      context.error({ invalidOperation: context.df.operationName })
+      context.log.error({ invalidOperation: context.df.operationName })
       break
   }
   context.log('end switch')

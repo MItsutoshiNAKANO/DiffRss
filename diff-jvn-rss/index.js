@@ -1,8 +1,8 @@
 'use strict'
 
-const Rss = require('../lib/parse-feeds')
+const RssWatcher = require('../lib/rss-watcher.js')
 
 module.exports = async function (context, timer, saver) {
   const SITE = { url: 'https://jvn.jp/rss/jvn.rdf', key: 'jvn' }
-  return await Rss.modified(context, SITE, { timer, saver })
+  return (new RssWatcher(context, SITE, { timer, saver })).watch()
 }
