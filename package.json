@@ -1,18 +1,23 @@
 {
-  "name": "diff-jvn-rss",
+  "name": "diff-rss",
   "version": "1.0.0",
-  "description": "diff JVN RSS",
+  "description": "diff RSS",
   "scripts": {
     "start": "func start",
     "test": "jest && standard"
   },
   "dependencies": {
+    "@line/bot-sdk": "^7.0.0",
     "durable-functions": "^2.0.2",
-    "rss-parser": "^3.12.0",
-    "standard": "*"
+    "file-type": "^17.1.6",
+    "rss-parser": "^3.12.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "babel-jest": "^28.1.3",
     "expect": "^28.1.3",
-    "jest": "^28.1.3"
+    "jest": "^28.1.3",
+    "standard": "*"
   }
 }
