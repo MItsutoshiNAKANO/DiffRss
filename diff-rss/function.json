@@ -4,7 +4,8 @@
       "name": "timer",
       "type": "timerTrigger",
       "direction": "in",
-      "schedule": "1 1,2 9,23 * * *"
+      "schedule": "1,31 * * * * *",
+      "scheduleSave": "1 1,2 9,23 * * *"
     },
     {
       "name": "saver",
