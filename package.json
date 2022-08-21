@@ -4,7 +4,8 @@
   "description": "diff RSS",
   "scripts": {
     "start": "func start",
-    "test": "jest && standard"
+    "test": "jest && standard",
+    "deploy": "func azure functionapp publish DiffRss"
   },
   "dependencies": {
     "@line/bot-sdk": "^7.0.0",
