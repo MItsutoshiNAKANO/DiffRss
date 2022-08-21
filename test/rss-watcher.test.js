@@ -59,24 +59,24 @@ const context = console
 describe('Test Watcher.compare()', () => {
   const watcher = new Watcher(context, site, null)
   test('undefined', () => {
-    expect(watcher.compare(feeds[0], undefined)).toStrictEqual(itemsOf1st)
+    expect(watcher.differ(feeds[0], undefined)).toStrictEqual(itemsOf1st)
   })
 
   test('{}', () => {
-    expect(watcher.compare(feeds[0], {})).toStrictEqual(itemsOf1st)
+    expect(watcher.differ(feeds[0], {})).toStrictEqual(itemsOf1st)
   })
 
   test('same date', () => {
-    expect(watcher.compare(feeds[0],
+    expect(watcher.differ(feeds[0],
       { date: '2000-01-01T00:00:00+09:00' })).toStrictEqual([])
   })
 
   test('bc - ab', async () => {
-    expect(watcher.compare(feeds[1], feeds[0])).toStrictEqual([itemC])
+    expect(watcher.differ(feeds[1], feeds[0])).toStrictEqual([itemC])
   })
 
   test('update c', async () => {
-    expect(watcher.compare(feeds[2], feeds[1])).toStrictEqual([updatedB])
+    expect(watcher.differ(feeds[2], feeds[1])).toStrictEqual([updatedB])
   })
 })
 
