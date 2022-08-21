@@ -1,7 +1,13 @@
 {
   "name": "diff-rss",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "diff RSS",
+  "homepage": "https://github.com/MItsutoshiNAKANO/DiffRss",
+  "license": "AGPL-3.0-or-later",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/MItsutoshiNAKANO/DiffRss.git"
+  },
   "scripts": {
     "start": "func start",
     "test": "jest && standard",
