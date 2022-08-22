@@ -1,0 +1,15 @@
+{
+  "bindings": [
+    {
+      "name": "timer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "1 1,2 9,23 * * *"
+    },
+    {
+      "name": "saver",
+      "type": "durableClient",
+      "direction": "in"
+    }
+  ]
+}
